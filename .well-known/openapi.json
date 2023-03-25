@@ -2,7 +2,7 @@
   "openapi": "3.0.2",
   "info": {
     "title": "Curia Platform Docs Plugin Retrieval API",
-    "description": "A retrieval API for querying and filtering documents based on natural language queries and metadata",
+    "description": "A retrieval API for querying and filtering documents based on natural language queries and metadata. Use the /docs endpoint to understand what endpoints are available. For example you can use the POST /query endpoint to lookup information about the Curia Platform.",
     "version": "1.0.0",
     "servers": [
       {
