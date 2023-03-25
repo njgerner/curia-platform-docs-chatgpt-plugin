@@ -6,6 +6,9 @@
     "version": "1.0.0",
     "servers": [
       {
+        "url": "https://curia-platform-docs-chatgpt.herokuapp.com/docs"
+      },
+      {
         "url": "https://curia-platform-docs-chatgpt.herokuapp.com"
       }
     ]
