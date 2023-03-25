@@ -24,7 +24,8 @@ sub_app = FastAPI(
     title="Curia Platform Docs Retrieval Plugin API",
     description="A retrieval API for querying and filtering Curia Platform documents based on natural language queries and metadata",
     version="1.0.0",
-    servers=[{"url": "https://api.curia.ai"}],
+    servers=[{"url": "https://curia-platform-docs-chatgpt.herokuapp.com"}],
+    # servers=[{"url": "https://your-app-url.com"}],
 )
 app.mount("/sub", sub_app)
 
@@ -34,8 +35,8 @@ assert BEARER_TOKEN is not None
 
 
 def validate_token(credentials: HTTPAuthorizationCredentials = Depends(bearer_scheme)):
-    if credentials.scheme != "Bearer" or credentials.credentials != BEARER_TOKEN:
-        raise HTTPException(status_code=401, detail="Invalid or missing token")
+    # if credentials.scheme != "Bearer" or credentials.credentials != BEARER_TOKEN:
+    #     raise HTTPException(status_code=401, detail="Invalid or missing token")
     return credentials
 
 
