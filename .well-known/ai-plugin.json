@@ -1,8 +1,8 @@
 {
   "schema_version": "v1",
   "name_for_model": "retrieval",
-  "name_for_human": "Curia Platform Docs Plugin",
-  "description_for_model": "Plugin for searching through the Curia Platform API documents to find answers to questions and retrieve relevant information. Use it whenever a user asks something that might be found in the Curia Platform API docs.",
+  "name_for_human": "Curia Platform Docs Retrieval Plugin",
+  "description_for_model": "Use the Curia Platform Docs Plugin to get relevant document information from the Curia Platform API. Use the query endpoint to make queries for relevant docs. Use the upsert endpoint to save previously made queries and the responses for future use. The api works best when searching for words that are related to the Curia Platform, which is a machine learning platform for that allows users to build risk & intervention models for healthcare.",
   "description_for_human": "Search through the Curia Platform API documents.",
   "auth": {
     "type": "user_http",
