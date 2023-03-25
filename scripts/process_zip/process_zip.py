@@ -5,6 +5,10 @@ import json
 import argparse
 import asyncio
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 from models.models import Document, DocumentMetadata, Source
 from datastore.datastore import DataStore
 from datastore.factory import get_datastore
@@ -77,6 +81,9 @@ async def process_file_dump(
                     text=extracted_text,
                     metadata=metadata,
                 )
+                # print the document
+                print(f"document: {document}")
+
                 documents.append(document)
             except Exception as e:
                 # log the error and continue with the next file
